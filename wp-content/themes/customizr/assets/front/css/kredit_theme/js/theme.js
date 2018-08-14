@@ -269,7 +269,7 @@
                     "Сравнить</a></div><a target='_blank' href='" + cr_link + "' class='_2sdWW _1AAND RaZ2S _3x77s'  data-test='ui-button' >" +
                     "<span class='' >Перейти</span></a></div></div></div></div></div></div></div><div class='_3ZJAJ'><div class='_20fBJ'><div class='_1Nnoa _1wJD0'>Ставка</div><div class='mvsgY _3YiJZ _1IV07'>от" + rate
                     + "%</div></div><div class='_20fBJ'><div class='_1Nnoa _1wJD0'>Платеж</div><div class='mvsgY _3YiJZ _1IV07'>" + month_p +
-                    "<span class='currency-symbol'>" + str_v + "</span>/мес</div></div></div><div class='_3ZJAJ'><div class='_20fBJ'><div class='_2fowT _36BEl I8VA_' data-test='n=show-group'><span class='zlZmW'>Сравнить</span><svg class='_2HEu9'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#arrow-down-thin'></use></svg></div></div><div class='_20fBJ'><div><a target='_blank' class='_2sdWW _1AAND RaZ2S _3x77s' href='' data-test='ui-button'><span class=''>Перейти</span></a></div></div></div></li>";
+                    "<span class='currency-symbol'>" + str_v + "</span>/мес</div></div></div><div class='_3ZJAJ'><div class='_20fBJ'><div class='_2fowT _36BEl I8VA_' data-test='n=show-group'><span class='zlZmW'>Сравнить</span><svg class='_2HEu9'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#arrow-down-thin'></use></svg></div></div><div class='_20fBJ'><div><a target='_blank' class='_2sdWW _1AAND RaZ2S _3x77s' href='" + cr_link + "' data-test='ui-button'><span class=''>Перейти</span></a></div></div></div></li>";
 
             }
         }
