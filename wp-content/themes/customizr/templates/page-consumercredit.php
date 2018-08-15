@@ -1108,10 +1108,10 @@ get_header();
                                                                                               rel="nofollow"
                                                                                               data-reactid="250"><?php the_field('block_1_button_text'); ?></a><!--/noindex--></div>
                                                     <div class="_3Gb4E" data-reactid="251">
-                                                        <button class="_3yCMa _25N6O N0qHF _1-c8L" type="button"
+                                                        <a id="kredit-calculate-button" href="#middle-part" class="_3yCMa _25N6O N0qHF _1-c8L" type="button"
                                                                 data-test="ui-button" data-reactid="252">Рассчитать
                                                             кредит
-                                                        </button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1120,7 +1120,7 @@ get_header();
                                 </div>
                             </div>
                         </div>
-                        <div class="FYTqf _1nunx kTe6a" data-reactid="253">
+                        <div class="FYTqf _1nunx kTe6a" data-reactid="253" id="middle-part">
                             <div class="UZpaj" data-reactid="254">
                                 <div id="credit-calculator" class="_2YmV1 kTe6a" data-reactid="255">
                                     <div class="_3W9lM I76dw" data-reactid="256">
@@ -1248,9 +1248,8 @@ get_header();
                                                                     <?php if(get_field('block_2_term')) { ?>
                                                                         <?php foreach(get_field('block_2_term') as $item) { ?>
                                                                             <li onclick="select_period_srok_kr_form('<?= $item['term_text']; ?>')"
-                                                                                value="<?= $item['term_nubmer_month']; ?>" label="<?= $item['term_text']; ?>" class="Z96DE _3pzz9"
-                                                                                data-test="ui-menu-item" data-reactid="297">2
-                                                                                года
+                                                                                value="" label="<?= $item['term_text']; ?>" class="Z96DE _3pzz9"
+                                                                                data-test="ui-menu-item" data-reactid="297"><?= $item['term_text']; ?>
                                                                             </li>
                                                                         <?php }?>
                                                                     <?php }?>
@@ -1295,12 +1294,11 @@ get_header();
                                                         </div>
                                                     </div>
                                                     <div class="_3L9yW" data-reactid="312">
-                                                        <div class="_2yIUX" data-reactid="313"><a target="_blank"
+                                                        <div class="_2yIUX" data-reactid="313"><!--noindex--><a target="_blank"
                                                                                                   class="_3yCMa _20Wee N0qHF _1-c8L"
-                                                                                                  href="//sravni.go2cloud.org/aff_c?offer_id=36&amp;aff_id=2&amp;aff_sub=655408484.1533125627&amp;aff_sub2=(direct)/~/(none)/~/(none)/~/(not set)/~/Moscow/~/Moscow/~/bank%2Frenessans-kredit%2Fkredit%2Fpotrebitelskij%2F%3Famount%3D%26currency%3DRUB%26externalId%3Da2f51f5e-5f38-44a3-b039-c9bb23f55b10%26purpose%3DNoMatter%26solvencyProof%3DNoMatter&amp;aff_sub3=&amp;aff_sub4=potrebitelskij&amp;aff_sub5=conscred&amp;source=search_product&amp;adv_sub=a2f51f5e-5f38-44a3-b039-c9bb23f55b10"
+                                                                                                  rel="nofollow" href="<?php the_field('block_1_link'); ?>"
                                                                                                   data-test="ui-button"
-                                                                                                  data-reactid="314">Перейти
-                                                                на сайт</a></div>
+                                                                                                  data-reactid="314"><?php the_field('block_1_button_text'); ?></a><!--/noindex--></div>
                                                     </div>
                                                 </div>
                                                 <div class="-V0Gw _3nBbU" data-reactid="315">
@@ -1321,7 +1319,7 @@ get_header();
                                                                 </div>
                                                                 <div class="_3_W52 _2mg0e" data-reactid="325"><span
                                                                             class="_2m0zk" data-reactid="326"><span
-                                                                                data-reactid="327">от 12 808</span><span
+                                                                                data-reactid="327">от <span id="monthpay"></span></span><span
                                                                                 class="_3LCRp"
                                                                                 data-reactid="328">₽</span></span></div>
                                                             </div>
@@ -1572,12 +1570,12 @@ get_header();
 
 
                                             <div class="_2cM7S" data-reactid="429">
-                                                <div class="_6UjP2" data-reactid="430"><a target="_blank"
+                                                <div class="_6UjP2" data-reactid="430"><!--noindex--><a target="_blank"
                                                                                           class="_3yCMa _20Wee N0qHF _1-c8L"
-                                                                                          href="//sravni.go2cloud.org/aff_c?offer_id=36&amp;aff_id=2&amp;aff_sub=655408484.1533125627&amp;aff_sub2=(direct)/~/(none)/~/(none)/~/(not set)/~/Moscow/~/Moscow/~/bank%2Frenessans-kredit%2Fkredit%2Fpotrebitelskij%2F%3Famount%3D%26currency%3DRUB%26externalId%3Da2f51f5e-5f38-44a3-b039-c9bb23f55b10%26purpose%3DNoMatter%26solvencyProof%3DNoMatter&amp;aff_sub3=&amp;aff_sub4=potrebitelskij&amp;aff_sub5=conscred&amp;source=search_product&amp;adv_sub=a2f51f5e-5f38-44a3-b039-c9bb23f55b10"
+                                                                                          href="<?php the_field('block_1_link'); ?>"
+                                                                                          rel="nofollow"
                                                                                           data-test="ui-button"
-                                                                                          data-reactid="431">Перейти на
-                                                        сайт</a></div>
+                                                                                          data-reactid="431"><?php the_field('block_1_button_text'); ?></a><!--/noindex--></div>
                                             </div>
                                         </div>
                                     </div>
@@ -3642,6 +3640,7 @@ get_header();
     function select_period_srok_kr_form(a) {
         jQuery("#cur_period-kr-form").val(a);
         jQuery("#period-kr-form-wrap").toggleClass("_1VyK0");
+        monthlyPayment();
     }
 
     function select_currency_kr_form() {
@@ -3769,6 +3768,13 @@ get_header();
     #slider-range {
         bottom: -7px;
     }
+
+    @media screen and (max-width: 768px) {
+        #consumer-credit ._25N6O, #consumer-credit ._25N6O:hover {
+            display: none;
+        }
+    }
+
 </style>
 
 <?php get_footer(); ?>
@@ -3797,6 +3803,7 @@ get_header();
         step: 1,
         slide: function (event, ui) {
             jQuery("#price").val(ui.values[1] * 1000);
+            monthlyPayment();
             // jQuery("#slider-range_dop").slider("option", "values", [1, ui.values[1] * 1000]);
             // document.getElementById('price_dop').value = ui.values[1] * 1000;
             // Get_PotrKr();
@@ -3804,7 +3811,39 @@ get_header();
     });
     jQuery("#price").val(jQuery("#slider-range").slider("values", 1) * 1000);
 
-    /*jQuery( "#slider-range" ).slider({
-        animate: "fast"
-    });*/
+
+    function monthlyPayment() {
+        var sum = jQuery('#price').val();
+        var period = jQuery('#cur_period-kr-form').val();
+        period = period.charAt(0);
+        period = period * 12;
+        var rate = <?php the_field('block_2_rate_number'); ?>;
+        var fullsum = parseInt(sum) + (sum / 100 * rate);
+        var monthpay = Math.round(fullsum / period);
+        monthpay = monthpay.toString();
+        monthpay = monthpay.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+        console.log(sum);
+        console.log(period);
+        console.log(rate);
+        console.log(fullsum);
+        console.log(monthpay);
+        jQuery('#monthpay').html(monthpay);
+    }
+    monthlyPayment();
+
+    jQuery(document).ready(function(){
+        jQuery("#kredit-calculate-button").click(function (event) {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+
+            //забираем идентификатор бока с атрибута href
+            var id  = jQuery(this).attr('href'),
+
+                //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = jQuery(id).offset().top;
+
+            //анимируем переход на расстояние - top за 1500 мс
+            jQuery('body,html').animate({scrollTop: top}, 500);
+        });
+    });
 </script>
