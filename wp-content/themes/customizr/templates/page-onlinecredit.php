@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: consumer-credit
+* Template Name: online-credit
 */
 get_header();
 ?>
@@ -625,9 +625,11 @@ get_header();
 
 
 
+
 </script>
 <script type="application/ld+json" data-react-helmet="true">
         {"@context":"http://schema.org","@type":"FinancialProduct","additionalType":"BankOrCreditUnion","annualPercentageRate":11.300000190734865,"interestRate":11.300000190734865,"feesAndCommissionsSpecification":"Сумма 30 000 ₽ - 700 000 ₽; Ставка 11,3% - 23,3%; Срок 0 минут; Возраст заемщика лет; Подтверждение платёжеспособности: не требуется; ; Кредит погашается ежемесячно равными (аннуитетными) платежами; Стаж на последнем месте работы от 3 месяцев","name":"Кредит Потребительский","provider":{"@context":"http://schema.org","@type":"Organization","aggregateRating":{"@context":"http://schema.org","@type":"AggregateRating","reviewCount":0,"bestRating":5,"ratingValue":4.7,"worstRating":0},"logo":"//f.sravni.ru/logotypes/banks/logo_777.svg","image":"//f.sravni.ru/logotypes/banks/logo_777.svg","name":"Ренессанс Кредит","url":"/bank/renessans-kredit/"}}
+
 
 
 
@@ -1021,7 +1023,8 @@ get_header();
                                             <div class="_2oLhw" data-reactid="180">
                                                 <div class="" data-reactid="181"><h1 class="x2N_6 _3dK9S"
                                                                                      data-reactid="182"><?php the_title(); ?></h1>
-                                                    <div class="_3ZU3u" data-reactid="183"><?php the_field('block_1_subtitle'); ?></div>
+                                                    <div class="_3ZU3u"
+                                                         data-reactid="183"><?php the_field('block_1_subtitle'); ?></div>
                                                 </div>
                                                 <div class="XsuI4" data-reactid="184">
                                                     <div class="D895_ _2V4-h _1eEG1 mblzX ER4_X" data-reactid="185"><img
@@ -1044,7 +1047,9 @@ get_header();
                                                         </div>
                                                         <span class="LiV2D" data-reactid="194"><span class="_3AHzk"
                                                                                                      data-reactid="195">Процентная ставка:</span><span
-                                                                    class="_3t5p1 _2mg0e" data-reactid="196"><?php the_field('block_1_rate'); ?></span></span></li>
+                                                                    class="_3t5p1 _2mg0e"
+                                                                    data-reactid="196"><?php the_field('block_1_rate'); ?></span></span>
+                                                    </li>
                                                     <li class="_2XBag" data-reactid="200">
                                                         <div class="_390m1 _1sid2 BzFP3" data-test="ui-icon"
                                                              data-reactid="201">
@@ -1054,7 +1059,8 @@ get_header();
                                                         </div>
                                                         <span class="LiV2D" data-reactid="204"><span class="_3AHzk"
                                                                                                      data-reactid="205">Сумма кредита:</span><span
-                                                                    class="_3t5p1 _2mg0e" data-reactid="206"><?php the_field('block_1_sum'); ?></span></span>
+                                                                    class="_3t5p1 _2mg0e"
+                                                                    data-reactid="206"><?php the_field('block_1_sum'); ?></span></span>
                                                     </li>
                                                     <li class="_2XBag" data-reactid="207">
                                                         <div class="_390m1 _1sid2 BzFP3" data-test="ui-icon"
@@ -1066,7 +1072,8 @@ get_header();
                                                         <span class="LiV2D" data-reactid="211"><span class="_3AHzk"
                                                                                                      data-reactid="212">Срок:</span><span
                                                                     class="_3t5p1 _2mg0e"
-                                                                    data-reactid="213"><?php the_field('block_1_term'); ?></span></span></li>
+                                                                    data-reactid="213"><?php the_field('block_1_term'); ?></span></span>
+                                                    </li>
                                                     <li class="_2XBag" data-reactid="214">
                                                         <div class="_390m1 _1sid2 BzFP3" data-test="ui-icon"
                                                              data-reactid="215">
@@ -1076,7 +1083,9 @@ get_header();
                                                         </div>
                                                         <span class="LiV2D" data-reactid="218"><span class="_3AHzk"
                                                                                                      data-reactid="219">Документы:</span><span
-                                                                    class="_3t5p1 _2mg0e" data-reactid="220"><?php the_field('block_1_documents'); ?></span></span></span></li>
+                                                                    class="_3t5p1 _2mg0e"
+                                                                    data-reactid="220"><?php the_field('block_1_documents'); ?></span></span></span>
+                                                    </li>
                                                     <li class="_2XBag" data-reactid="227">
                                                         <div class="_390m1 _1sid2 BzFP3" data-test="ui-icon"
                                                              data-reactid="228">
@@ -1086,7 +1095,9 @@ get_header();
                                                         </div>
                                                         <span class="LiV2D" data-reactid="231"><span class="_3AHzk"
                                                                                                      data-reactid="232">Возраст заёмщика:</span><span
-                                                                    class="_3t5p1 _2mg0e" data-reactid="233"><?php the_field('block_1_age'); ?></span></span></li>
+                                                                    class="_3t5p1 _2mg0e"
+                                                                    data-reactid="233"><?php the_field('block_1_age'); ?></span></span>
+                                                    </li>
                                                     <li class="_2XBag" data-reactid="238">
                                                         <div class="_390m1 _1sid2 BzFP3" data-test="ui-icon"
                                                              data-reactid="239">
@@ -1096,20 +1107,25 @@ get_header();
                                                         </div>
                                                         <span class="LiV2D" data-reactid="242"><span class="_3AHzk"
                                                                                                      data-reactid="243">Предварительное решение:</span><span
-                                                                    class="_3t5p1 _2mg0e" data-reactid="244"><?php the_field('block_1_decigion'); ?></span></span></li>
+                                                                    class="_3t5p1 _2mg0e"
+                                                                    data-reactid="244"><?php the_field('block_1_decigion'); ?></span></span>
+                                                    </li>
                                                 </ul>
                                             </div>
                                             <div class="_1LhuI" data-reactid="247">
                                                 <div class="_180uG" data-reactid="248">
-                                                    <div class="_3Gb4E" data-reactid="249"><!--noindex--><a target="_blank"
-                                                                                              class="_3yCMa _20Wee N0qHF _1-c8L"
-                                                                                              href="<?php the_field('block_1_link'); ?>"
-                                                                                              data-test="ui-button"
-                                                                                              rel="nofollow"
-                                                                                              data-reactid="250"><?php the_field('block_1_button_text'); ?></a><!--/noindex--></div>
+                                                    <div class="_3Gb4E" data-reactid="249"><!--noindex--><a
+                                                                target="_blank"
+                                                                class="_3yCMa _20Wee N0qHF _1-c8L"
+                                                                href="<?php the_field('block_1_link'); ?>"
+                                                                data-test="ui-button"
+                                                                rel="nofollow"
+                                                                data-reactid="250"><?php the_field('block_1_button_text'); ?></a>
+                                                        <!--/noindex--></div>
                                                     <div class="_3Gb4E" data-reactid="251">
-                                                        <a id="kredit-calculate-button" href="#middle-part" class="_3yCMa _25N6O N0qHF _1-c8L" type="button"
-                                                                data-test="ui-button" data-reactid="252">Рассчитать
+                                                        <a id="kredit-calculate-button" href="#middle-part"
+                                                           class="_3yCMa _25N6O N0qHF _1-c8L" type="button"
+                                                           data-test="ui-button" data-reactid="252">Рассчитать
                                                             кредит
                                                         </a>
                                                     </div>
@@ -1178,7 +1194,8 @@ get_header();
                                                                 </div>-->
                                                                 <div id="slider-range"></div>
                                                             </div>
-                                                            <div data-test="ui-select" id="currency-kr-form-wrap" class="_1F9QS ARpTy SSAxA"
+                                                            <div data-test="ui-select" id="currency-kr-form-wrap"
+                                                                 class="_1F9QS ARpTy SSAxA"
                                                                  data-reactid="277">
                                                                 <div class="_31J-9 _3yuTA _16jhA"
                                                                      data-test="ui-select-input" data-reactid="278">
@@ -1187,7 +1204,9 @@ get_header();
                                                                              autocapitalize="off" spellcheck="off"
                                                                              class="_1QIZ8 _3pwdR _1O6pC _2hF92 _18Yqt _3j6D0"
                                                                              id="currency" name="currency"
-                                                                             data-reactid="280" id="cur_currency-kr-form" onclick="select_currency_kr_form()">₽
+                                                                             data-reactid="280"
+                                                                             id="cur_currency-kr-form"
+                                                                             onclick="select_currency_kr_form()">₽
                                                                         </div>
                                                                         <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
                                                                              data-test="ui-select-input-icon"
@@ -1199,9 +1218,11 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <ul id="currency-kr-form" class="_3nnad aDtzb" data-test="ui-select-values"
+                                                                <ul id="currency-kr-form" class="_3nnad aDtzb"
+                                                                    data-test="ui-select-values"
                                                                     data-reactid="284">
-                                                                    <li onclick="select_currency_kr_form('₽')" value="RUB" label="₽"
+                                                                    <li onclick="select_currency_kr_form('₽')"
+                                                                        value="RUB" label="₽"
                                                                         class="Z96DE _3pzz9 _1kLbN"
                                                                         data-test="ui-menu-item" data-reactid="285">₽
                                                                     </li>
@@ -1245,33 +1266,37 @@ get_header();
                                                                 <ul id="period-kr-form" class="_3nnad aDtzb"
                                                                     data-test="ui-select-values"
                                                                     data-reactid="296">
-                                                                    <?php if(get_field('block_2_term')) { ?>
-                                                                        <?php foreach(get_field('block_2_term') as $item) { ?>
+                                                                    <?php if (get_field('block_2_term')) { ?>
+                                                                        <?php foreach (get_field('block_2_term') as $item) { ?>
                                                                             <li onclick="select_period_srok_kr_form('<?= $item['term_text']; ?>')"
-                                                                                value="" label="<?= $item['term_text']; ?>" class="Z96DE _3pzz9"
-                                                                                data-test="ui-menu-item" data-reactid="297"><?= $item['term_text']; ?>
+                                                                                value=""
+                                                                                label="<?= $item['term_text']; ?>"
+                                                                                class="Z96DE _3pzz9"
+                                                                                data-test="ui-menu-item"
+                                                                                data-reactid="297"><?= $item['term_text']; ?>
                                                                             </li>
-                                                                        <?php }?>
-                                                                    <?php }?>
+                                                                        <?php } ?>
+                                                                    <?php } ?>
                                                                 </ul>
                                                             </div>
                                                         </div>
                                                         <div class="_1C2Hg _1lqVV" data-reactid="301">
                                                             <div data-test="ui-select" class="_1F9QS "
-                                                                 data-reactid="302">
-                                                                <div class="_31J-9 _3yuTA _3z5-G _16jhA"
+                                                                 data-reactid="302" id="proof_income-kr-form-wrap">
+                                                                <div class="_31J-9 _3yuTA _16jhA"
                                                                      data-test="ui-select-input" data-reactid="303">
                                                                     <label
                                                                             class="_1oupA _2IwHh" for="solvencyProof"
                                                                             data-reactid="304">Подтверждение
                                                                         дохода</label>
                                                                     <div class="_3FIbJ " data-reactid="305">
-                                                                        <div autocorrect="off" autocomplete="off"
-                                                                             autocapitalize="off" spellcheck="off"
-                                                                             class="_1QIZ8 _3pwdR _1O6pC _18Yqt"
-                                                                             id="solvencyProof" name="solvencyProof"
-                                                                             disabled="" data-reactid="306">не требуется
-                                                                        </div>
+                                                                        <input autocorrect="off" autocomplete="off"
+                                                                               autocapitalize="off" spellcheck="off"
+                                                                               class="_1QIZ8 _3pwdR _1O6pC _18Yqt"
+                                                                               name="solvencyProof" data-reactid="306"
+                                                                               value="не требуется"
+                                                                               onclick="select_proof_income_kr_form()"
+                                                                               id="cur_proof_income-kr-form">
                                                                         <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k "
                                                                              data-test="ui-select-input-icon"
                                                                              data-reactid="307">
@@ -1282,23 +1307,65 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <ul class="_3nnad aDtzb" data-test="ui-select-values"
+                                                                <ul id="proof_income-kr-form" class="_3nnad aDtzb"
+                                                                    data-test="ui-select-values"
                                                                     data-reactid="310">
-                                                                    <li value="None" label="не требуется"
-                                                                        class="Z96DE _3pzz9 _1kLbN"
-                                                                        data-test="ui-menu-item"
-                                                                        data-reactid="311">не требуется
-                                                                    </li>
+                                                                    <?php if (get_field('block_2_income_proof')) { ?>
+                                                                        <?php foreach (get_field('block_2_income_proof') as $item) { ?>
+                                                                            <li onclick="select_proof_income_item_kr_form('<?= $item['item']; ?>')"
+                                                                                value="None"
+                                                                                label="<?= $item['item']; ?>"
+                                                                                class="Z96DE _3pzz9"
+                                                                                data-test="ui-menu-item"
+                                                                                data-reactid="311"><?= $item['item']; ?>
+                                                                            </li>
+                                                                        <?php } ?>
+                                                                    <?php } ?>
                                                                 </ul>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="_1LLwb BAiDv" data-reactid="314">
+                                                        <div class="_1LLwb _7bk4J tk7dl" data-reactid="315">
+                                                            <div class="_1C2Hg _1CskR" data-reactid="316">
+                                                                <div class="_3MXuG"
+                                                                     data-test="ui-radio-button-group"
+                                                                     data-reactid="317">
+                                                                    <div class="_15j6i _2IwHh" data-reactid="318">
+                                                                        Условия кредита
+                                                                    </div>
+                                                                    <div class="_1XI37" data-reactid="319"><label
+                                                                                class="_36QUE"
+                                                                                data-test="ui-radio-button"
+                                                                                data-reactid="320"><input checked=""
+                                                                                    type="radio" class="_3OxzJ"
+                                                                                    name="customerType"
+                                                                                    value="Default" readonly=""
+                                                                                    data-reactid="321"><span
+                                                                                    class="_3pwF5"
+                                                                                    data-reactid="322">Стандартные</span></label><label
+                                                                                class="_36QUE"
+                                                                                data-test="ui-radio-button"
+                                                                                data-reactid="323"><input
+                                                                                    type="radio" class="_3OxzJ"
+                                                                                    name="customerType"
+                                                                                    value="Salary" readonly=""
+                                                                                    data-reactid="324"><span class="_3pwF5"
+                                                                                                     data-reactid="325">Зарплатным клиентам</span></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <div class="_3L9yW" data-reactid="312">
-                                                        <div class="_2yIUX" data-reactid="313"><!--noindex--><a target="_blank"
-                                                                                                  class="_3yCMa _20Wee N0qHF _1-c8L"
-                                                                                                  rel="nofollow" href="<?php the_field('block_1_link'); ?>"
-                                                                                                  data-test="ui-button"
-                                                                                                  data-reactid="314"><?php the_field('block_1_button_text'); ?></a><!--/noindex--></div>
+                                                        <div class="_2yIUX" data-reactid="313"><!--noindex--><a
+                                                                    target="_blank"
+                                                                    class="_3yCMa _20Wee N0qHF _1-c8L"
+                                                                    rel="nofollow"
+                                                                    href="<?php the_field('block_1_link'); ?>"
+                                                                    data-test="ui-button"
+                                                                    data-reactid="314"><?php the_field('block_1_button_text'); ?></a>
+                                                            <!--/noindex--></div>
                                                     </div>
                                                 </div>
                                                 <div class="-V0Gw _3nBbU" data-reactid="315">
@@ -1307,8 +1374,9 @@ get_header();
                                                             <div data-reactid="318">
                                                                 <div class="_2n3gE _2IwHh" data-reactid="319">Ставка
                                                                 </div>
-                                                                <div class="_3_W52 _2mg0e" data-reactid="320"><span
-                                                                            data-reactid="321"><?php the_field('block_2_rate'); ?></span></div>
+                                                                <div class="_3_W52 _2mg0e" data-reactid="320"><span id="cur_rate_span"
+                                                                            data-reactid="321"><?php the_field('block_2_rate'); ?></span>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="_37X4Y" data-reactid="322">
@@ -1319,7 +1387,8 @@ get_header();
                                                                 </div>
                                                                 <div class="_3_W52 _2mg0e" data-reactid="325"><span
                                                                             class="_2m0zk" data-reactid="326"><span
-                                                                                data-reactid="327">от <span id="monthpay"></span></span><span
+                                                                                data-reactid="327">от <span
+                                                                                    id="monthpay"></span></span><span
                                                                                 class="_3LCRp"
                                                                                 data-reactid="328">₽</span></span></div>
                                                             </div>
@@ -1392,20 +1461,23 @@ get_header();
                                                                 <tbody>
                                                                 <tr class="_1GqrZ _1Ayp8 _2WBPO">
                                                                     <th class="_1njmc _1_2t1 _1LDj0"><span
-                                                                                class="_1_4Z4"><?php the_field('rates_left_table_title'); ?></span></th>
+                                                                                class="_1_4Z4"><?php the_field('rates_left_table_title'); ?></span>
+                                                                    </th>
                                                                     <th class="_1njmc _1_2t1 _1LDj0"><span
                                                                                 class="_1_4Z4"><?php the_field('rates_right_table_title'); ?></span>
                                                                     </th>
                                                                 </tr>
                                                                 <tr class="_1GqrZ _2WBPO">
-                                                                    <?php if(get_field('rates_table')) { ?>
-                                                                        <?php foreach(get_field('rates_table') as $item) { ?>
-                                                                            <td class="_1njmc _1LDj0"><span class="_1GG0F"><?= $item['left_side']; ?></span>
+                                                                    <?php if (get_field('rates_table')) { ?>
+                                                                        <?php foreach (get_field('rates_table') as $item) { ?>
+                                                                            <td class="_1njmc _1LDj0"><span
+                                                                                        class="_1GG0F"><?= $item['left_side']; ?></span>
                                                                             </td>
-                                                                            <td  class="_1njmc _1LDj0"><span class="_1GG0F"><?= $item['right_side']; ?></span>
+                                                                            <td class="_1njmc _1LDj0"><span
+                                                                                        class="_1GG0F"><?= $item['right_side']; ?></span>
                                                                             </td>
-                                                                        <?php }?>
-                                                                    <?php }?>
+                                                                        <?php } ?>
+                                                                    <?php } ?>
                                                                 </tr>
                                                                 </tbody>
                                                             </table>
@@ -1416,11 +1488,11 @@ get_header();
                                             <div class="_49nrJ ER4_X ER4_X-1bl-2">
                                                 <div>
                                                     <ul class="_2UDHC">
-                                                        <?php if(get_field('conditions_list')) { ?>
-                                                            <?php foreach(get_field('conditions_list') as $item) { ?>
+                                                        <?php if (get_field('conditions_list')) { ?>
+                                                            <?php foreach (get_field('conditions_list') as $item) { ?>
                                                                 <li class="_3AwLH"><?= $item['item']; ?></li>
-                                                            <?php }?>
-                                                        <?php }?>
+                                                            <?php } ?>
+                                                        <?php } ?>
                                                     </ul>
                                                 </div>
                                                 <div class="_1a-k9">
@@ -1441,28 +1513,29 @@ get_header();
                                             <div class="_49nrJ ER4_X ER4_X-1bl-3">
                                                 <div>
                                                     <ul class="_2UDHC">
-                                                        <?php if(get_field('demands_list')) { ?>
-                                                            <?php foreach(get_field('demands_list') as $item) { ?>
+                                                        <?php if (get_field('demands_list')) { ?>
+                                                            <?php foreach (get_field('demands_list') as $item) { ?>
                                                                 <li class="_3AwLH"><?= $item['item']; ?></li>
-                                                            <?php }?>
-                                                        <?php }?>
+                                                            <?php } ?>
+                                                        <?php } ?>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="_49nrJ ER4_X ER4_X-1bl-4">
                                                 <div>
                                                     <ul class="_2UDHC">
-                                                        <?php if(get_field('documents_list')) { ?>
-                                                            <?php foreach(get_field('documents_list') as $item) { ?>
+                                                        <?php if (get_field('documents_list')) { ?>
+                                                            <?php foreach (get_field('documents_list') as $item) { ?>
                                                                 <li class="_3AwLH _2zaGV"><?= $item['item']; ?></li>
-                                                            <?php }?>
-                                                        <?php }?>
+                                                            <?php } ?>
+                                                        <?php } ?>
                                                     </ul>
                                                 </div>
                                                 <div class="_1a-k9">
                                                     <div class="_3FkEQ">
                                                         <div class="_2b5dU"><?php the_field('documents_title'); ?></div>
-                                                        <p class="_2zaGV"><?php the_field('documents_subtitle'); ?></p></div>
+                                                        <p class="_2zaGV"><?php the_field('documents_subtitle'); ?></p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1499,11 +1572,11 @@ get_header();
                                             <div class="_49nrJ ER4_X ER4_X-2bl-1">
                                                 <div>
                                                     <ul class="_2UDHC">
-                                                        <?php if(get_field('how_to_get_list')) { ?>
-                                                            <?php foreach(get_field('how_to_get_list') as $item) { ?>
+                                                        <?php if (get_field('how_to_get_list')) { ?>
+                                                            <?php foreach (get_field('how_to_get_list') as $item) { ?>
                                                                 <li class="_3AwLH"><?= $item['item']; ?></li>
-                                                            <?php }?>
-                                                        <?php }?>
+                                                            <?php } ?>
+                                                        <?php } ?>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1521,7 +1594,8 @@ get_header();
                                                             <div class="_3AKWC _2mg0e"><span class="_3FL_b"><!-- react-text: 637 -->1
                                                                     <!-- /react-text --><!-- react-text: 638 -->.
                                                                     <!-- /react-text --></span><!-- react-text: 639 -->
-                                                                <?php the_field('how_to_pay_off_title_1'); ?><!-- /react-text --></div>
+                                                                <?php the_field('how_to_pay_off_title_1'); ?><!-- /react-text -->
+                                                            </div>
                                                             <div class="_1hRHn"><?php the_field('how_to_pay_off_desc_1'); ?></div>
                                                         </div>
                                                     </div>
@@ -1541,7 +1615,8 @@ get_header();
                                                             <div class="_3AKWC _2mg0e"><span class="_3FL_b"><!-- react-text: 652 -->2
                                                                     <!-- /react-text --><!-- react-text: 653 -->.
                                                                     <!-- /react-text --></span><!-- react-text: 654 -->
-                                                                <?php the_field('how_to_pay_off_title_2'); ?><!-- /react-text --></div>
+                                                                <?php the_field('how_to_pay_off_title_2'); ?><!-- /react-text -->
+                                                            </div>
                                                             <div class="_1hRHn"><?php the_field('how_to_pay_off_desc_2'); ?></div>
                                                         </div>
                                                     </div>
@@ -1561,7 +1636,8 @@ get_header();
                                                             <div class="_3AKWC _2mg0e"><span class="_3FL_b"><!-- react-text: 667 -->3
                                                                     <!-- /react-text --><!-- react-text: 668 -->.
                                                                     <!-- /react-text --></span><!-- react-text: 669 -->
-                                                                <?php the_field('how_to_pay_off_title_3'); ?><!-- /react-text --></div>
+                                                                <?php the_field('how_to_pay_off_title_3'); ?><!-- /react-text -->
+                                                            </div>
                                                             <div class="_1hRHn"><?php the_field('how_to_pay_off_desc_3'); ?></div>
                                                         </div>
                                                     </div>
@@ -1571,11 +1647,12 @@ get_header();
 
                                             <div class="_2cM7S" data-reactid="429">
                                                 <div class="_6UjP2" data-reactid="430"><!--noindex--><a target="_blank"
-                                                                                          class="_3yCMa _20Wee N0qHF _1-c8L"
-                                                                                          href="<?php the_field('block_1_link'); ?>"
-                                                                                          rel="nofollow"
-                                                                                          data-test="ui-button"
-                                                                                          data-reactid="431"><?php the_field('block_1_button_text'); ?></a><!--/noindex--></div>
+                                                                                                        class="_3yCMa _20Wee N0qHF _1-c8L"
+                                                                                                        href="<?php the_field('block_1_link'); ?>"
+                                                                                                        rel="nofollow"
+                                                                                                        data-test="ui-button"
+                                                                                                        data-reactid="431"><?php the_field('block_1_button_text'); ?></a>
+                                                    <!--/noindex--></div>
                                             </div>
                                         </div>
                                     </div>
@@ -3613,9 +3690,11 @@ get_header();
 
 
 
+
 </script>
 <script data-react-helmet="true" type="application/ld+json">
     {"@context":"http://schema.org","@type":"FinancialProduct","additionalType":"BankOrCreditUnion","annualPercentageRate":11.300000190734863,"interestRate":11.300000190734863,"feesAndCommissionsSpecification":"Сумма 30 000 ₽ - 700 000 ₽; Ставка 11,3% - 23,3%; Срок 0 минут; Возраст заемщика лет; Подтверждение платёжеспособности: не требуется; ; Кредит погашается ежемесячно равными (аннуитетными) платежами; Стаж на последнем месте работы от 3 месяцев","name":"Кредит Потребительский","provider":{"@context":"http://schema.org","@type":"Organization","aggregateRating":{"@context":"http://schema.org","@type":"AggregateRating","reviewCount":0,"bestRating":5,"ratingValue":4.7,"worstRating":0},"logo":"//f.sravni.ru/logotypes/banks/logo_777.svg","image":"//f.sravni.ru/logotypes/banks/logo_777.svg","name":"Ренессанс Кредит","url":"/bank/renessans-kredit/"}}
+
 
 
 
@@ -3637,10 +3716,19 @@ get_header();
         jQuery("#period-kr-form-wrap").toggleClass("_1VyK0");
     }
 
+    function select_proof_income_kr_form() {
+        jQuery("#proof_income-kr-form-wrap").toggleClass("_1VyK0");
+    }
+
     function select_period_srok_kr_form(a) {
         jQuery("#cur_period-kr-form").val(a);
         jQuery("#period-kr-form-wrap").toggleClass("_1VyK0");
         monthlyPayment();
+    }
+
+    function select_proof_income_item_kr_form(a) {
+        jQuery("#cur_proof_income-kr-form").val(a);
+        jQuery("#proof_income-kr-form-wrap").toggleClass("_1VyK0");
     }
 
     function select_currency_kr_form() {
@@ -3769,6 +3857,10 @@ get_header();
         bottom: -7px;
     }
 
+    #consumer-credit ._3pwF5 {
+        letter-spacing: 0;
+    }
+
     @media screen and (max-width: 768px) {
         #consumer-credit ._25N6O, #consumer-credit ._25N6O:hover {
             display: none;
@@ -3812,12 +3904,19 @@ get_header();
     jQuery("#price").val(jQuery("#slider-range").slider("values", 1) * 1000);
 
 
-    function monthlyPayment() {
+    function monthlyPayment(type = '') {
+        if((type == 'salary') || jQuery('._1XI37 ._36QUE:last-child input').is(':checked')) {
+            var rate = <?php the_field('block_2_salary_rate_number'); ?>;
+            jQuery('#cur_rate_span').html("<?php the_field('block_2_salary_rate'); ?>");
+        } else {
+            var rate = <?php the_field('block_2_rate_number'); ?>;
+            jQuery('#cur_rate_span').html("<?php the_field('block_2_rate'); ?>");
+        }
+
         var sum = jQuery('#price').val();
         var period = jQuery('#cur_period-kr-form').val();
         period = period.charAt(0);
         period = period * 12;
-        var rate = <?php the_field('block_2_rate_number'); ?>;
         var fullsum = parseInt(sum) + (sum / 100 * rate);
         var monthpay = Math.round(fullsum / period);
         monthpay = monthpay.toString();
@@ -3829,15 +3928,16 @@ get_header();
         console.log(monthpay);
         jQuery('#monthpay').html(monthpay);
     }
+
     monthlyPayment();
 
-    jQuery(document).ready(function(){
+    jQuery(document).ready(function () {
         jQuery("#kredit-calculate-button").click(function (event) {
             //отменяем стандартную обработку нажатия по ссылке
             event.preventDefault();
 
             //забираем идентификатор бока с атрибута href
-            var id  = jQuery(this).attr('href'),
+            var id = jQuery(this).attr('href'),
 
                 //узнаем высоту от начала страницы до блока на который ссылается якорь
                 top = jQuery(id).offset().top;
@@ -3846,4 +3946,12 @@ get_header();
             jQuery('body,html').animate({scrollTop: top}, 500);
         });
     });
+
+    jQuery('._1XI37 ._36QUE:first-child input').click(function () {
+        monthlyPayment();
+    })
+
+    jQuery('._1XI37 ._36QUE:last-child input').click(function () {
+        monthlyPayment('salary');
+    })
 </script>
