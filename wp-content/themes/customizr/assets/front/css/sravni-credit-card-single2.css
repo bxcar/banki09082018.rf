@@ -1,0 +1,224 @@
+#credit-card-single .efb_form {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+#credit-card-single .efb_thankyoupage-title {
+    margin-bottom: 35px;
+    color: #373d42;
+    font-size: 22px;
+}
+#credit-card-single .efb_thankyoupage-text {
+    max-height: 400px;
+    overflow: auto;
+    margin-bottom: 16px;
+    color: #3b3e44;
+    font-size: 18px;
+}
+#credit-card-single .efb_form_error {
+    font-size: 14px;
+    color: #c11d1d;
+    padding: 10px 0;
+}
+#credit-card-single label.efb_error {
+    top: 10px;
+    font-size: 14px;
+    color: #c11d1d;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    height: 20px;
+    background-color: #fff;
+    left: 0;
+}
+#credit-card-single .efb_title {
+    margin-bottom: 35px;
+    color: #373d42;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+#credit-card-single .efb_text-control {
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 16px;
+    padding-top: 9px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: bottom;
+}
+#credit-card-single .efb_text-control-label {
+    top: -5px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    left: 0;
+    color: #c1bfbf;
+    font-size: 14px;
+    transition: top ease 0.2s, font-size ease 0.2s;
+}
+#credit-card-single .efb_text-control-input input {
+    padding-top: 4px;
+    padding-bottom: 15px;
+    line-height: 24px;
+    border: 0;
+    border-bottom: 2px solid #d5d3d3;
+    border-radius: 0;
+    padding-left: 0;
+    font-size: 18px;
+    width: 100%;
+    box-shadow: none;
+    font-family: inherit;
+    outline: 0;
+    vertical-align: middle;
+}
+#credit-card-single .efb_text-control-input input:focus {
+    border-color: #3db448;
+}
+#credit-card-single .efb_text-control-input input.efb_error {
+    border-color: #c11d1d;
+    margin-left: 0;
+}
+#credit-card-single .efb_ik-select {
+    width: 100%;
+    min-width: 60px;
+    margin-top: -7px;
+    border-bottom: 2px solid #d5d3d3;
+    z-index: 3;
+    line-height: 18px;
+}
+#credit-card-single .efb_ik-select label.efb_error {
+    top: -10px;
+}
+#credit-card-single .efb_ik-select:after {
+    content: url('//www.sravni.ru/f/_/newdesign/img/arrow-down-normal.png');
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 6px;
+    right: 0;
+    top: 50%;
+    transition: .3s transform;
+    line-height: 0;
+    z-index: -1;
+}
+#credit-card-single .efb_ik-select-link {
+    cursor: pointer;
+    z-index: 1;
+}
+#credit-card-single .ik_select_link_text {
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-left: 10px;
+    margin-left: -10px;
+    text-align: left;
+    position: relative;
+}
+#credit-card-single .efb_checkbox-control {
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 16px;
+    padding-top: 9px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: bottom;
+}
+#credit-card-single .efb-checkbox-label {
+    padding-left: 22px;
+    font-size: 14px;
+}
+#credit-card-single .efb-checkbox-label:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    border: 1px solid #c1bfbf;
+    vertical-align: top;
+    width: 14px;
+    height: 14px;
+    margin-top: 4px;
+}
+#credit-card-single .efb-checkbox-label:hover:before {
+    border: 1px solid #52b9e6;
+}
+#credit-card-single .efb_checkbox-control input {
+    width: 14px;
+    position: absolute;
+    opacity: 0;
+}
+#credit-card-single .efb_checkbox-control input:checked + .efb-checkbox-label:before,
+#credit-card-single .efb_checkbox-control input:checked + .efb_error + .efb-checkbox-label:before {
+    background-color: #7dc257;
+    border: 1px solid #7dc257;
+    background-image: url('//www.sravni.ru/f/images/icon-checkbox-checked.svg');
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+}
+#credit-card-single .efb_checkbox-control label.efb_error {
+    font-size: 12px;
+    top: 30px;
+}
+#credit-card-single .efb_button-control .efb_button-control-submit {
+    padding: 8px 15px 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #7dc257;
+    font-size: 16px;
+    min-width: 150px;
+    border-radius: 4px;
+    outline: 0;
+    display: inline-block;
+    border: 0;
+    width: auto;
+    overflow: visible;
+    cursor: pointer;
+    margin: 0;
+}
+#credit-card-single .efb_button-control .efb_button-control-submit:disabled {
+    opacity: 0.5;
+}
+#credit-card-single .efb_ik-select-dd {
+    font-family: 'Open Sans', sans-serif;
+}
+#credit-card-single .efb_ik-select-dd .ik_select_list {
+    margin-left: -10px;
+    background-color: #fff;
+    box-shadow: 0 1px 8px 2.5px rgba(0, 0, 0, 0.19);
+}
+#credit-card-single .efb_ik-select-dd ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#credit-card-single .efb_ik-select-dd .ik_select_hover {
+    background: #e8f4fe;
+}
+#credit-card-single .efb_ik-select-dd .ik_select_option_label {
+    font-size: 16px;
+    padding-bottom: 14px;
+    padding-top: 11px;
+    border: 0;
+    display: block;
+    padding-left: 10px;
+    line-height: 24px;
+}
+#credit-card-single .verify-phone-block .efb_checkbox-control {
+    margin-bottom: 0;
+}
+#credit-card-single .verify-phone-block .efb_checkbox-control .efb-checkbox-label {
+    padding-left: 0;
+}
+#credit-card-single .verify-phone-block .efb_checkbox-control .efb-checkbox-label:before {
+    content: none;
+}
+#credit-card-single .efb_text-control-input textarea {
+    width: 100%;
+    border: 1px solid #d5d3d3;
+    border-bottom: 2px solid #d5d3d3;
+    font-family: inherit;
+    padding-top: 4px;
+    margin-top: 4px;
+    line-height: 24px;
+    font-size: 18px;
+}
