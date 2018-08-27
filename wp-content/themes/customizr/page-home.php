@@ -161,6 +161,7 @@
             src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/js/bootstrap.js?ver=4.9.3'></script>
     <script type='text/javascript'
             src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/js/jquery-ui.js?ver=4.9.3'></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script type='text/javascript'
             src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/ui/jquery.ui.touch-punch.js?ver=4.9.3'></script>
     <script type='text/javascript'
@@ -355,12 +356,20 @@
                                     <ul id="primary-nav" class="primary-nav__menu regular-nav nav__menu nav">
                                         <li id="menu-item-234"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-page-ancestor menu-item-234">
-                                            <a href="https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/"
+                                            <a href="https:#credits-compare"
                                                class="nav__link"><span class="nav__title">Банки кредиты</span></a></li>
                                         <li id="menu-item-235"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-235">
-                                            <a href="#nav2" class="nav__link"><span
+                                            <a href="#credit-selection" class="nav__link"><span
                                                         class="nav__title">Кредиты онлайн</span></a></li>
+                                        <li id="menu-item-236"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-235">
+                                            <a href="https://банки-кредиты-онлайн.рф/credit-cards/" class="nav__link"><span
+                                                        class="nav__title">Кредитные карты</span></a></li>
+                                        <li id="menu-item-237"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-235">
+                                            <a href="https://банки-кредиты-онлайн.рф/deposit/" class="nav__link"><span
+                                                        class="nav__title">Вклады</span></a></li>
                                         <li id="menu-item-233"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233">
                                             <a href="https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/stati/"
@@ -393,7 +402,7 @@
                                                                                                    aria-hidden="true"
                                                                                                    src="<? echo get_template_directory_uri() . '/assets/front/css/kredit_theme/' ?>img/banki_kredity.svg"
                                                                                                    class="special-list__icon"><span
-                                    class="special-list__title">Банки и кредиты - выбрать лучшие предложения банков.</span>
+                                    class="special-list__title">Банки и кредиты - сравнить лучшие кредиты банков</span>
                             <span class="special-list__description">Выбери свой банковский кредит</span><span
                                     class="special-list__description"> </span> <span
                                     class="kit-button kit-button_color_green kit-button_size_m special-list__btn--text special-list__link"> <span
@@ -1821,6 +1830,7 @@
 <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/front/css/jquery-ui-for-autocomp-wrap.css">
 <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script src="<?= get_template_directory_uri(); ?>/assets/front/js/city-list.js"></script>
 <div class="_2Jclz _2fZko _1odi0 _3m0xh" id="overlay" style="display:none;">
     <div class="ud9DQ _21AWC _2t8V0"></div>
@@ -2879,8 +2889,11 @@
     }</script>
 <script>function Get_PotrKr() {
         $.ajax({
-            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_potr_kr.php",
+            // url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_potr_kr.php",
+            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/select-port-kr/",
             type: "POST",
+            // contentType: "application/json; charset=utf-8",
+            // dataType: "json",
             error: function (response) {
                 $(".status").html(response.status + "<br>" + response.msg);
                 console.log("Ошибка");
@@ -2906,6 +2919,7 @@
                 console.log(data);
                 change(data);
                 console.log("Успешно загрузили данные");
+                // console.log(response);
             },
         });
     }

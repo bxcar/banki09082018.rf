@@ -1,7 +1,13 @@
 <?php
+/*
+* Template Name: select-deposits-temp
+*/
+?>
+
+<?php
 
 
-require($_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
+//require($_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
 $PotrKr = array();
 $Bank_Offers = array();
 

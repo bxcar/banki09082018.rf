@@ -1,7 +1,22 @@
-<?php 
+<?php
+/*
+* Template Name: select-potr-kr-temp
+*/
+//get_header();
+?>
+<?php
+//define('SHORTINIT', true);
+//require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
+//require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
+//$_SERVER['DOCUMENT_ROOT'] . '/wp-load.php'
+//require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php' );
+//define( 'WP_USE_THEMES', false ); // Don't load theme support functionality
+//require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php' );
 
+//define('STYLESHEETPATH', '');
+//define('TEMPLATEPATH', '');
+//require_once( $_SERVER['DOCUMENT_ROOT'] . "/wp-load.php");
 
-require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
 $PotrKr = array();
 $Bank_Offers = array();
    
@@ -9,7 +24,8 @@ $args = array(
 
 	'category' => 3,
 	'post_status' => 'publish',
-); 
+);
+
 
 $result = wp_get_recent_posts($args);
 
@@ -17,7 +33,7 @@ if (count($result)>0)
 {
 	$i=0;
 	
-foreach( $result as $p ){ 
+foreach( $result as $p ){
    
 		//$url = get_permalink($p['ID']);
 		//$count($result);thumba = get_the_post_thumbnail($p['ID']);
@@ -67,5 +83,8 @@ $i=$i+1;
 }
 
 		echo json_encode($PotrKr);
-		
+
+
+
+//get_footer();
 ?>

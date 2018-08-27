@@ -328,12 +328,20 @@
                                     <ul id="primary-nav" class="primary-nav__menu regular-nav nav__menu nav">
                                         <li id="menu-item-234"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-page-ancestor menu-item-234">
-                                            <a href="https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/"
+                                            <a href="https://банки-кредиты-онлайн.рф/#credits-compare"
                                                class="nav__link"><span class="nav__title">Банки кредиты</span></a></li>
                                         <li id="menu-item-235"
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-235">
-                                            <a href="#nav2" class="nav__link"><span
+                                            <a href="https://банки-кредиты-онлайн.рф/#credit-selection" class="nav__link"><span
                                                         class="nav__title">Кредиты онлайн</span></a></li>
+                                        <li id="menu-item-236"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-235">
+                                            <a href="https://банки-кредиты-онлайн.рф/credit-cards/" class="nav__link"><span
+                                                        class="nav__title">Кредитные карты</span></a></li>
+                                        <li id="menu-item-237"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-235">
+                                            <a href="https://банки-кредиты-онлайн.рф/deposit/" class="nav__link"><span
+                                                        class="nav__title">Вклады</span></a></li>
                                         <li id="menu-item-233"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233">
                                             <a href="https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/stati/"
@@ -1582,7 +1590,8 @@
     }</script>
 <script>function Get_PotrKr() {
         $.ajax({
-            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_cr_cards.php",
+            // url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_cr_cards.php",
+            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/select-cr-cards/",
             type: "POST",
             error: function (response) {
                 $(".status").html(response.status + "<br>" + response.msg);

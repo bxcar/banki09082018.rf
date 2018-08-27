@@ -10,6 +10,11 @@ get_header();
 <link href="<?= get_template_directory_uri(); ?>/assets/front/css/sravni-credit-card-single2.css" rel="stylesheet"
       type="text/css" charset="UTF-8">
 
+<style>
+    .bank-product-item__close {
+        display: none;
+    }
+</style>
 <style>.calculator-branded-button {
         background-color: #d74739;
         background-image: ;
@@ -139,14 +144,13 @@ get_header();
                     <div class="bank-product-item__top" id="product-page-app-header">
                         <div class="bank-product-item__header ui-panel">
                             <div class="bank-product-item__header-col">
-                                <a href="" class="bank-product-item__bank-link">Почта Банк</a>
-                                <h1 class="bank-product-item__name">Кредитная карта «Почтовый Экспресс 10000» Почта
-                                    Банка</h1>
+                                <a href="" class="bank-product-item__bank-link"></a>
+                                <h1 class="bank-product-item__name"><?php the_title(); ?></h1>
                             </div>
                             <div class="bank-product-item__header-col bank-product-item__header-col--logo">
                                 <div class="bank-product-item__bank-logo">
 
-                                    <img src="//f.sravni.ru/logotypes/banks/biglogo_72.svg" alt="Почта Банк">
+                                    <img src="<?php the_field('block_1_img_1'); ?>" alt="Почта Банк">
 
                                 </div>
                             </div>
@@ -174,7 +178,7 @@ get_header();
                             </div>
                             <div class="bank-product-item__info-row">
                                 <div class="bank-product-item__info-col bank-product-item__info-col--img">
-                                    <img src="//f.sravni.ru/logotypes/cards/logo_1024_4076.svg" alt="Почта Банк">
+                                    <img src="<?php the_field('block_1_img_2'); ?>">
                                 </div>
                                 <div class="bank-product-item__info-col">
                                     <div class="product-info__wrap">
@@ -329,7 +333,7 @@ get_header();
                                                         class="card-info-list__icon-svg-stroke"></path></g></svg>
 								    </span>
                                             <span class="card-info-list__txt">
-                                         0 %
+                                         <?php the_field('block_1_rate');?>
                                     </span>
                                             <span class="card-info-list__ref">ставка по кредиту</span>
                                         </li>
@@ -343,7 +347,7 @@ get_header();
                                                   d="M7 9.1c.1 0 .1-.1.2-.1v5h.6V8.3h-.6L5.7 9.5l.3.4c.6-.4.9-.7 1-.8z"></path>
                                         </svg>
                                     </span>
-                                            <span class="card-info-list__txt">до 60 дней</span>
+                                            <span class="card-info-list__txt"><?php the_field('block_1_grace_period');?></span>
                                             <span class="card-info-list__ref">льготный период</span>
                                         </li>
                                         <li class="card-info-list__item">
@@ -354,8 +358,7 @@ get_header();
                                                     fill-rule="evenodd"><path
                                                         d="M11.788 14.074c-.183.485 1.27 1.822.26 2.09H1.02c-1.146-.277.19-1.595-.052-2.32-.226-.672-.35-1.397-.35-2.153 0-3.475 2.536-5.684 5.74-5.684 3.203 0 5.86 2.21 5.86 5.685 0 .844-.153 1.65-.43 2.384zM7.714 5.84l2.5-3.433s-1.652-.975-3.588-.948c-1.996.027-3.813.947-3.813.947L5.375 5.84"></path></g></svg>
                                     </span>
-                                            <span class="card-info-list__txt">до 10&nbsp;000 <span class="rouble"><span
-                                                            class="rouble__default">руб.</span></span></span>
+                                            <span class="card-info-list__txt"><?php the_field('block_1_credit_limit');?></span>
                                             <span class="card-info-list__ref">кредитный лимит</span>
                                         </li>
                                         <li class="card-info-list__item">
@@ -368,8 +371,7 @@ get_header();
                                                         d="M1.5 4.135v3.783c0 1.64 2.99 2.967 6.676 2.967 3.687 0 6.346-1.328 6.346-2.967V4.135"></path><path
                                                         d="M1.5 8v4.115c0 1.783 3.012 3.137 6.7 3.137 3.686 0 6.34-1.354 6.34-3.137V8"></path></g></svg>
                                     </span>
-                                            <span class="card-info-list__txt">500 <span class="rouble"><span
-                                                            class="rouble__default">руб.</span></span> в месяц</span>
+                                            <span class="card-info-list__txt"><?php the_field('block_1_service_cost');?></span>
                                             <span class="card-info-list__ref">стоимость обслуживания</span>
                                         </li>
                                     </ul>
@@ -433,63 +435,48 @@ get_header();
 
                                     <div class="bank-product-item__content" id="product-page-app">
                                         <div class="ui-panel ui-panel--small-phablet-margin">
-                                            <div class="ui-panel__headline ui-panel__headline--border-bottom">Описание
+                                            <div class="ui-panel__headline ui-panel__headline--border-bottom"><?php the_field('block_2_title');?>
                                             </div>
                                             <div class="article-content">
-                                                <p>«Почтовый Экспресс» – это карта Visa для ежедневных покупок с
-                                                    необременительным кредитным лимитом, которого вполне достаточно для
-                                                    регулярных трат. Проценты по кредиту не начисляются, а при погашении
-                                                    задолженности вовремя и в полном объеме не взимается и ежемесячная
-                                                    комиссия за обслуживание карты. </p>
+                                                <p><?php the_field('block_2_text');?></p>
                                             </div>
                                         </div>
                                         <!--Проценты на остаток-->
                                         <!--Комиссии-->
                                         <div class="ui-panel ui-panel--small-phablet-margin ui-panel--no-padding-bottom">
-                                            <div class="ui-panel__headline" id="expandable-block-1">Тарифы</div>
+                                            <div class="ui-panel__headline" id="expandable-block-1"><?php the_field('block_3_title');?></div>
                                             <div class="js-expandable-block-content-default expandable-block-content-default"
                                                  data-js-expandable-block-id="1"
                                                  data-js-expandable-block-state="default">
                                                 <table class="table-light table-light--small-padding product-inside__table-light bank-product-item__table-light">
                                                     <tbody>
                                                     <tr class="table-light__row">
-                                                        <th class="table-light__cell-header">Вид комиссии</th>
-                                                        <th class="table-light__cell-header">Стоимость</th>
+                                                        <th class="table-light__cell-header"><?php the_field('block_3_table_left_title');?></th>
+                                                        <th class="table-light__cell-header"><?php the_field('block_3_table_right_title');?></th>
                                                     </tr>
                                                     <tr class="table-light__row">
                                                         <td class="table-light__cell">SMS-уведомление по счёту</td>
-                                                        <td class="table-light__cell article-content">Бесплатно-в
-                                                            течение 2-х месяцев при условии подключения услуги в дату
-                                                            заключения договора и при отсутствии в течение расчетного
-                                                            периода задолженности и остатка на счете, превышающего 49
-                                                            рублей. В остальных случаях-49 руб.
-                                                        </td>
+                                                        <td class="table-light__cell article-content"><?php the_field('block_3_item_1_sms');?></td>
                                                     </tr>
                                                     <tr class="table-light__row">
                                                         <td class="table-light__cell">Годовое обслуживание основной
                                                             карты
                                                         </td>
-                                                        <td class="table-light__cell article-content">500 руб.; при
-                                                            отсутствии задолженности, образованной за предшествующие
-                                                            расчетные периоды- не взимается.
-                                                        </td>
+                                                        <td class="table-light__cell article-content"><?php the_field('block_3_item_2_year_service');?></td>
                                                     </tr>
                                                     <tr class="table-light__row">
                                                         <td class="table-light__cell">Комиссия за ведение счета</td>
-                                                        <td class="table-light__cell article-content">при отсутствии
-                                                            операций по Карте за истекший год - не взимается; в
-                                                            остальных случаях 500 рублей
-                                                        </td>
+                                                        <td class="table-light__cell article-content"><?php the_field('block_3_item_3_fee');?></td>
                                                     </tr>
                                                     <tr class="table-light__row">
                                                         <td class="table-light__cell">Выпуск основной карты</td>
-                                                        <td class="table-light__cell article-content">500 руб.</td>
+                                                        <td class="table-light__cell article-content"><?php the_field('block_3_item_4_main_card');?></td>
                                                     </tr>
                                                     <tr class="table-light__row">
                                                         <td class="table-light__cell">Оформление новой карты взамен
                                                             выпущенной
                                                         </td>
-                                                        <td class="table-light__cell article-content">500 руб.</td>
+                                                        <td class="table-light__cell article-content"><?php the_field('block_3_item_5_new_card');?></td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -499,166 +486,154 @@ get_header();
                                                  data-js-expandable-block-id="1"
                                                  data-js-expandable-block-state="default">
                                                 <div class="ui-panel__container">
-                                                    <h3 class="ui-panel__headline">Ежемесячные платежи</h3>
+                                                    <h3 class="ui-panel__headline"><?php the_field('block_3_subtitle_1');?></h3>
                                                     <table class="table-light table-light--small-padding product-inside__table-light animation fadeIn">
                                                         <tbody>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">SMS-уведомление по счёту</td>
-                                                            <td class="table-light__cell"><span>Бесплатно-в течение 2-х месяцев при условии подключения услуги в дату заключения договора и при отсутствии в течение расчетного периода задолженности и остатка на счете, превышающего 49 рублей. В остальных случаях-49 руб.</span>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_6_sms');?></span>
                                                             </td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Годовое обслуживание основной
                                                                 карты
                                                             </td>
-                                                            <td class="table-light__cell"><span>500 руб.;  при отсутствии задолженности, образованной за предшествующие расчетные периоды- не взимается.</span>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_7_year_service');?></span>
                                                             </td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
                                                 <div class="ui-panel__container">
-                                                    <h3 class="ui-panel__headline">Ежегодные платежи</h3>
+                                                    <h3 class="ui-panel__headline"><?php the_field('block_3_subtitle_2');?></h3>
                                                     <table class="table-light table-light--small-padding product-inside__table-light animation fadeIn">
                                                         <tbody>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Комиссия за ведение счета</td>
-                                                            <td class="table-light__cell"><span>при отсутствии операций по Карте за истекший год  - не взимается; в остальных случаях 500 рублей
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_8_fee');?>
 </span></td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
                                                 <div class="ui-panel__container">
-                                                    <h3 class="ui-panel__headline">Разовые платежи</h3>
+                                                    <h3 class="ui-panel__headline"><?php the_field('block_3_subtitle_3');?></h3>
                                                     <table class="table-light table-light--small-padding product-inside__table-light animation fadeIn">
                                                         <tbody>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Выпуск основной карты</td>
-                                                            <td class="table-light__cell"><span>500 руб.</span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_9_main_card');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Оформление новой карты взамен
                                                                 выпущенной
                                                             </td>
-                                                            <td class="table-light__cell"><span>500 руб.</span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_10_new_card');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие кредитных средств в
                                                                 банкомате своего банка
                                                             </td>
-                                                            <td class="table-light__cell"><span>300 руб. </span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_11_withdraw');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие кредитных средств в
                                                                 банкомате стороннего банка
                                                             </td>
-                                                            <td class="table-light__cell"><span>300 руб. </span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_12_withdraw_other_bank');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие кредитных средств в ПВН
                                                                 своего банка
                                                             </td>
-                                                            <td class="table-light__cell"><span>300 руб. </span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_12_withdraw_2');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие кредитных средств в ПВН
                                                                 стороннего банка
                                                             </td>
-                                                            <td class="table-light__cell"><span>300 руб. </span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_12_withdraw_3');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие кредитных средств в
                                                                 банкоматах банков-партнеров
                                                             </td>
-                                                            <td class="table-light__cell"><span>300 руб. </span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_13_withdraw_4');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие кредитных средств в ПВН
                                                                 банка-партнера
                                                             </td>
-                                                            <td class="table-light__cell"><span>300 руб. </span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_14_withdraw_5');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Запрос баланса в банкомате
                                                                 стороннего банка
                                                             </td>
-                                                            <td class="table-light__cell"><span>50 руб.</span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_15_balance');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие собственных средств в
                                                                 банкомате стороннего банка
                                                             </td>
-                                                            <td class="table-light__cell"><span>300 руб.</span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_16_withdraw_6');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие собственных средств в
                                                                 ПВН стороннего банка
                                                             </td>
-                                                            <td class="table-light__cell"><span>300 руб.</span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_17_withdraw_7');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Смена ПИН-кода</td>
-                                                            <td class="table-light__cell"><span>в  банкоматах банка 30 рублей</span>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_18_pin');?></span>
                                                             </td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
                                                 <div class="ui-panel__container">
-                                                    <h3 class="ui-panel__headline">Другие платежи</h3>
+                                                    <h3 class="ui-panel__headline"><?php the_field('block_3_subtitle_4');?></h3>
                                                     <table class="table-light table-light--small-padding product-inside__table-light animation fadeIn">
                                                         <tbody>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие собственных средств в
                                                                 банкомате своего банка
                                                             </td>
-                                                            <td class="table-light__cell"><span>не взимается </span>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_18_withdraw_8');?></span>
                                                             </td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие собственных средств в
                                                                 ПВН своего банка
                                                             </td>
-                                                            <td class="table-light__cell"><span>не взимается </span>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_19_withdraw_9');?></span>
                                                             </td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие собственных средств в
                                                                 банкомате банка-партнера
                                                             </td>
-                                                            <td class="table-light__cell"><span>не взимается (банки Группы ВТБ)</span>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_20_withdraw_10');?></span>
                                                             </td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Снятие собственных средств в
                                                                 ПВН банка-партнера
                                                             </td>
-                                                            <td class="table-light__cell"><span>не взимается (банки Группы ВТБ)</span>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_21_withdraw_11');?></span>
                                                             </td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
                                                 <div class="ui-panel__container">
-                                                    <h3 class="ui-panel__headline">Дополнительно</h3>
+                                                    <h3 class="ui-panel__headline"><?php the_field('block_3_subtitle_5');?></h3>
                                                     <table class="table-light table-light--small-padding product-inside__table-light animation fadeIn">
                                                         <tbody>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Дополнительные условия</td>
-                                                            <td class="table-light__cell"><span><p>Длительность беспроцентного периода, от даты совершения каждой операции - 24 месяца. Процентная ставка по истечении Беспроцентного периода равна ставке рефинансирования Центрального банка Российской Федерации, действующей на дату заключения Договора.
-</p><p>Обязательный ежемесячный платеж не менее 1 000 рублей, но не более задолженности.</p>
-<p>Требования к заемщику: </p>
-<ol>
-<li>Постоянная регистрация в любом регионе РФ; наличие собственного мобильного телефона и другого контактного телефона; собственного адреса электронной почты.</li>
-<li>Для работающих клиентов необходимо указание ИНН работодателя, рабочего телефона и стаж работы от 3-х месяцев.</li>
-<li>Согласие на обработку данных из ПФ РФ, в том числе на использование банком полученных данных в процессе принятия кредитного решения. </li></ol>
-<p>Комиссии за услуги: </p>
-<ol>
-<li>«Автопогашение» - 29 рублей за операцию. </li>
-<li>«Погашение с карты» -1,9% от суммы перевода (минимум 49 рублей). </li>
-<li>«Меняю дату платежа» - 300 рублей.</li>
-<li>«Кредитное информирование»: за 1-й период пропуска платежа - 300 рублей; за 2-й, 3-й и 4-й периоды пропуска платежа - по 500 рублей. Взимается за каждый Период пропуска Платежа, но не более 4-х пропусков подряд.</li></ol></span>
+                                                            <td class="table-light__cell"><span><?php the_field('block_3_item_22_add_cond');?></span>
                                                             </td>
                                                         </tr>
                                                         </tbody>
@@ -679,9 +654,7 @@ get_header();
 
                                         <!--Условия для получения карты-->
                                         <div class="ui-panel ui-panel--small-phablet-margin ui-panel--no-padding-bottom">
-                                            <div class="ui-panel__headline" id="expandable-block-2">Условия для
-                                                получения карты
-                                            </div>
+                                            <div class="ui-panel__headline" id="expandable-block-2"><?php the_field('block_4_title');?></div>
                                             <div class="js-expandable-block-content-default expandable-block-content-default"
                                                  data-js-expandable-block-id="2"
                                                  data-js-expandable-block-state="default">
@@ -689,29 +662,29 @@ get_header();
                                                 <ul class="list-icon ui-panel__list-icon">
                                                     <li class="list-icon__item list-icon__item--age">
                                                         <div>
-                                                            <div><span class="text">Возраст от 18 лет</span></div>
+                                                            <div><span class="text"><?php the_field('block_4_item_1');?></span></div>
                                                         </div>
                                                     </li>
                                                     <li class="list-icon__item list-icon__item--continuityofemploymentfrom">
                                                         <div>
-                                                            <div><span class="text">Стаж работы на последнем месте от 3 месяца</span>
+                                                            <div><span class="text"><?php the_field('block_4_item_2');?></span>
                                                             </div>
                                                         </div>
                                                     </li>
                                                     <li class="list-icon__item list-icon__item--nationality">
                                                         <div>
-                                                            <div><span class="text">Гражданство РФ</span></div>
+                                                            <div><span class="text"><?php the_field('block_4_item_3');?></span></div>
                                                         </div>
                                                     </li>
                                                     <li class="list-icon__item list-icon__item--registrationinbankregion">
                                                         <div>
-                                                            <div><span class="text">Наличие постоянной регистрации в регионе обращения</span>
+                                                            <div><span class="text"><?php the_field('block_4_item_4');?></span>
                                                             </div>
                                                         </div>
                                                     </li>
                                                     <li class="list-icon__item list-icon__item--passport">
                                                         <div>
-                                                            <div><span class="text">Паспорт</span></div>
+                                                            <div><span class="text"><?php the_field('block_4_item_5');?></span></div>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -726,13 +699,13 @@ get_header();
                                                         <tbody>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Возраст</td>
-                                                            <td class="table-light__cell"><span>от 18 лет</span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_4_item_6');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Стаж работы на последнем
                                                                 месте
                                                             </td>
-                                                            <td class="table-light__cell"><span>3 месяца</span></td>
+                                                            <td class="table-light__cell"><span><?php the_field('block_4_item_7');?></span></td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Подтверждение
@@ -742,7 +715,7 @@ get_header();
                                                                 <div>
                                                                     <div>
                                                                         <ul classname="list-dotted table-light__list-dotted">
-                                                                            <li><span class="text">не требуется</span>
+                                                                            <li><span class="text"><?php the_field('block_4_item_8');?></span>
                                                                             </li>
                                                                         </ul>
                                                                     </div>
@@ -754,17 +727,7 @@ get_header();
                                                             <td class="table-light__cell">
                                                                 <div>
                                                                     <div>
-                                                                        <ul classname="list-dotted table-light__list-dotted">
-                                                                            <li><span class="text">гражданство РФ</span>
-                                                                            </li>
-                                                                            <li><span class="text">наличие постоянной регистрации в регионе обращения</span>
-                                                                            </li>
-                                                                            <li>
-                                                                                <span class="text">мобильный телефон</span>
-                                                                            </li>
-                                                                            <li><span class="text">отсутствие негативной кредитной истории</span>
-                                                                            </li>
-                                                                        </ul>
+                                                                        <?php the_field('block_4_item_9');?>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -774,12 +737,7 @@ get_header();
                                                             <td class="table-light__cell">
                                                                 <div>
                                                                     <div>
-                                                                        <ul classname="list-dotted table-light__list-dotted">
-                                                                            <li><span class="text">паспорт</span></li>
-                                                                            <li>
-                                                                                <span class="text">заявление-анкета</span>
-                                                                            </li>
-                                                                        </ul>
+                                                                        <?php the_field('block_4_item_10');?>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -789,12 +747,7 @@ get_header();
                                                             <td class="table-light__cell">
                                                                 <div>
                                                                     <div>
-                                                                        <ul classname="list-dotted table-light__list-dotted">
-                                                                            <li><span class="text">заграничный паспорт или водительское удостоверение или пенсионное удостоверение или документы о собственности на активы или пластиковая карта банка или свидетельство о регистрации транспортного средства</span>
-                                                                            </li>
-                                                                            <li><span class="text">страховое свидетельство государственного пенсионного страхования</span>
-                                                                            </li>
-                                                                        </ul>
+                                                                        <?php the_field('block_4_item_11');?>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -802,8 +755,8 @@ get_header();
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Информация на сайте банка</td>
                                                             <td class="table-light__cell"><span><a
-                                                                            href="/Goto.ashx?type=CreditCard&amp;id=4076"
-                                                                            target="_blank">www.pochtabank.ru/</a></span>
+                                                                            href="https://<?php the_field('block_4_item_12');?>"
+                                                                            target="_blank"><?php the_field('block_4_item_12');?></a></span>
                                                             </td>
                                                         </tr>
                                                         </tbody>
@@ -823,26 +776,26 @@ get_header();
 
                                         <!--Лимиты-->
                                         <div class="ui-panel ui-panel--small-phablet-margin">
-                                            <div class="ui-panel__headline">Лимиты</div>
+                                            <div class="ui-panel__headline"><?php the_field('p2_block_6_title');?></div>
                                             <div class="ui-panel__row">
 
                                                 <div class="ui-panel__col">
-                                                    <div class="bank-product-item__table-light-header">Снятие наличных
+                                                    <div class="bank-product-item__table-light-header"><?php the_field('p2_block_6_table_title');?>
                                                     </div>
                                                     <table class="table-light table-light--small-padding bank-product-item__table-light bank-product-item__table-light--no-mobile-mt">
                                                         <tbody>
                                                         <tr class="table-light__row">
-                                                            <th class="table-light__cell-header">Снятие наличных</th>
+                                                            <th class="table-light__cell-header"><?php the_field('p2_block_6_table_title');?></th>
                                                             <th class="table-light__cell-header"></th>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">Месячный лимит</td>
-                                                            <td class="table-light__cell article-content">30 000 руб.
+                                                            <td class="table-light__cell article-content"><?php the_field('p2_block_6_item_1');?>
                                                             </td>
                                                         </tr>
                                                         <tr class="table-light__row">
                                                             <td class="table-light__cell">За одну операцию</td>
-                                                            <td class="table-light__cell article-content">5 000 руб.
+                                                            <td class="table-light__cell article-content"><?php the_field('p2_block_6_item_2');?>
                                                             </td>
                                                         </tr>
                                                         </tbody>
@@ -854,15 +807,10 @@ get_header();
                                         <!--На что потратить мили-->
 
                                         <div class="ui-panel ui-panel--small-phablet-margin">
-                                            <div class="ui-panel__headline ui-panel__headline--border-bottom">Бонусы и
-                                                скидки
+                                            <div class="ui-panel__headline ui-panel__headline--border-bottom"><?php the_field('p2_block_5_title');?>
                                             </div>
                                             <div class="article-content">
-                                                <p>До 30 сентября 2018 года возможность приобрести билеты на российский
-                                                    этап «Формулы 1» со скидкой 10% в рамках акции «Открой мир FORMULA
-                                                    1». </p>
-                                                <p>Возможность оплачивать свои покупки при помощи Samsung Pay, Google
-                                                    Pay или Apple Pay.</p>
+                                                <?php the_field('p2_block_5_text');?>
                                             </div>
                                         </div>
 
@@ -962,7 +910,7 @@ get_header();
 
                                 <div class="sidebar-content-container serp-advices">
                                     <div class="serp-advices-inner sidebar-content-container-inner company-contacts-block">
-                                        <div class="heading-small">Контакты банка</div>
+                                        <div class="heading-small"><?php the_field('sidebar_block_1_title');?></div>
                                         <ul>
                                             <li class="phone-line phone-line-block">
                                                 <div class="icon">
@@ -972,7 +920,7 @@ get_header();
                                                         </g>
                                                     </svg>
                                                 </div>
-                                                <span class="text">8 (800) 550-07-70</span>
+                                                <span class="text"><?php the_field('sidebar_phone');?></span>
                                                 <!--                                                <div class="show-button show-phone-button">показать</div>-->
                                             </li>
                                             <li class="website-line">
@@ -984,7 +932,7 @@ get_header();
                                                     </svg>
                                                 </div>
                                                 <span class="text">
-					<a target="_blank" rel="nofollow" href="https://www.sravni.ru/Goto.ashx?type=Bank&amp;id=72">www.pochtabank.ru</a>
+					<a target="_blank" rel="nofollow" href="https://<?php the_field('sidebar_site');?>"><?php the_field('sidebar_site');?></a>
 				</span>
                                             </li>
                                         </ul>
@@ -1005,19 +953,19 @@ get_header();
                                 <div class="sidebar-content-container serp-advices">
                                     <div class="serp-advices-inner bank-offices-block">
                                         <div class="heading-small heading-small--border-bottom"><a
-                                                    href="/bank/pochta-bank/otdelenija/">Отделения и банкоматы</a>
+                                                    href="/bank/pochta-bank/otdelenija/"><?php the_field('sidebar_block_2_title');?></a>
                                         </div>
                                         <div class="map-company-info map-company-info--two-col">
                                             <div class="map-company-info__col">
                                                 <a class="link" href="/bank/pochta-bank/otdelenija/" target="_blank">
-                                                    <span class="map-company-info__val">409</span>
-                                                    <span class="map-company-info__name">отделений </span>
+                                                    <span class="map-company-info__val"><?php the_field('sidebar_department_number');?></span>
+                                                    <span class="map-company-info__name"><?php the_field('sidebar_department_text');?></span>
                                                 </a>
                                             </div>
                                             <div class="map-company-info__col">
                                                 <a class="link" href="/bank/pochta-bank/bankomaty/" target="_blank">
-                                                    <span class="map-company-info__val">281</span>
-                                                    <span class="map-company-info__name">банкомат</span>
+                                                    <span class="map-company-info__val"><?php the_field('atm_number');?></span>
+                                                    <span class="map-company-info__name"><?php the_field('atm_text');?></span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1109,21 +1057,6 @@ get_header();
 
             <div id="disclaimer"></div>
 
-            <div class="l-centered breadcrumbs-block">
-                <div>
-                    <nav class="breadcrumbs">
-                        <a href="/" class="breadcrumbs-item" title="Сравни.ру">Сравни.ru</a>
-                        <span class="breadcrumbs-separator">&gt;</span>
-                        <a href="/bank/pochta-bank/" class="breadcrumbs-item">Почта Банк</a>
-                        <span class="breadcrumbs-separator">&gt;</span>
-                        <a href="/bank/pochta-bank/karty/" class="breadcrumbs-item">Кредитные карты</a>
-                        <span class="breadcrumbs-separator">&gt;</span>
-                        <a href="/bank/pochta-bank/kreditnaja-karta/visaclassic/pochtovyj-ehkspress-10000/"
-                           class="breadcrumbs-item">Почтовый Экспресс 10000</a>
-                        <span class="breadcrumbs-separator">&gt;</span>
-                    </nav>
-                </div>
-            </div>
             <section class="links-block l-centered">
                 <div class="l-row">
                 </div>
@@ -1173,6 +1106,7 @@ get_header();
         text-transform: none !important;
         letter-spacing: 0 !important;
     }
+
 
     @media screen and (max-width: 767px) {
         .table-light--small-padding .table-light__row {
