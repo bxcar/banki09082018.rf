@@ -226,7 +226,7 @@ get_header();
                                                                                                         name="Amount"
                                                                                                         class="deposit-amount-input"
                                                                                                         maxlength="10"
-                                                                                                        value="1 000 000"
+                                                                                                        value="500000"
                                                                                                         data-reactid=".1.0.1:1.0.0.1">
                                                                     <!--<div class="deposit-amount-slider-container"
                                                                          data-reactid=".1.0.1:1.0.0.2">
@@ -283,8 +283,7 @@ get_header();
                                                                          style="position: relative;">
                                                                         <div class="ik_select_link select-control-inner-link">
                                                                             <div id="ik_select_link_text-month"
-                                                                                 class="ik_select_link_text">Месяц
-                                                                            </div>
+                                                                                 class="ik_select_link_text">Месяц</div>
                                                                         </div>
                                                                         <div class="ik_select_dropdown select-control-inner-dd"
                                                                              style="position: absolute; z-index: 10010; width: 100%; display: none;">
@@ -424,8 +423,8 @@ get_header();
                                                                         <li class="product-summary__details-item product-summary__details-item--grey"
                                                                             data-reactid=".1.0.1:1.2.0.2.0"><span
                                                                                     data-reactid=".1.0.1:1.2.0.2.0.0"><span
-                                                                                        data-reactid=".1.0.1:1.2.0.2.0.0.0"><span
-                                                                                            data-reactid=".1.0.1:1.2.0.2.0.0.0.0">1 000 000</span><span
+                                                                                        data-reactid=".1.0.1:1.2.0.2.0.0.0"><span id="summa-vklada"
+                                                                                            data-reactid=".1.0.1:1.2.0.2.0.0.0.0">500 000</span><span
                                                                                             data-reactid=".1.0.1:1.2.0.2.0.0.0.1"> </span><span
                                                                                             class="currency-symbol"
                                                                                             data-reactid=".1.0.1:1.2.0.2.0.0.0.2">₽</span></span></span><span
@@ -436,8 +435,8 @@ get_header();
                                                                         <li class="product-summary__details-item product-summary__details-item--green"
                                                                             data-reactid=".1.0.1:1.2.0.2.2"><span
                                                                                     data-reactid=".1.0.1:1.2.0.2.2.0"><span
-                                                                                        data-reactid=".1.0.1:1.2.0.2.2.0.0"><span
-                                                                                            data-reactid=".1.0.1:1.2.0.2.2.0.0.0">6 030</span><span
+                                                                                        data-reactid=".1.0.1:1.2.0.2.2.0.0"><span id="nach-proc"
+                                                                                            data-reactid=".1.0.1:1.2.0.2.2.0.0.0">2 958</span><span
                                                                                             data-reactid=".1.0.1:1.2.0.2.2.0.0.1"> </span><span
                                                                                             class="currency-symbol"
                                                                                             data-reactid=".1.0.1:1.2.0.2.2.0.0.2">₽</span></span></span><span
@@ -475,7 +474,7 @@ get_header();
                                                                             </div>
                                                                             <span class="product-summary__total-value color-black"
                                                                                   data-reactid=".1.0.1:1.2.0.3.1.1"><span
-                                                                                        data-reactid=".1.0.1:1.2.0.3.1.1.0"><span
+                                                                                        data-reactid=".1.0.1:1.2.0.3.1.1.0"><span id="result"
                                                                                             data-reactid=".1.0.1:1.2.0.3.1.1.0.0">1 006 030</span><span
                                                                                             data-reactid=".1.0.1:1.2.0.3.1.1.0.1"> </span><span
                                                                                             class="currency-symbol"
@@ -1114,7 +1113,6 @@ get_header();
                                                                 <div class="map-company-info map-company-info--two-col">
                                                                     <div class="map-company-info__col">
                                                                         <a class="link"
-                                                                           href="/bank/sovkombank/otdelenija/"
                                                                            target="_blank">
                                                                             <span class="map-company-info__val"><?php the_field('sidebar_department_number'); ?></span>
                                                                             <span class="map-company-info__name"><?php the_field('sidebar_department_text'); ?></span>
@@ -1122,7 +1120,6 @@ get_header();
                                                                     </div>
                                                                     <div class="map-company-info__col">
                                                                         <a class="link"
-                                                                           href="/bank/sovkombank/bankomaty/"
                                                                            target="_blank">
                                                                             <span class="map-company-info__val"><?php the_field('sidebar_atm_number'); ?></span>
                                                                             <span class="map-company-info__name"><?php the_field('sidebar_atm_text'); ?></span>
@@ -1246,13 +1243,13 @@ get_header();
                                         </div>
                                         <div class="map-company-info map-company-info--two-col">
                                             <div class="map-company-info__col">
-                                                <a class="link" href="/bank/sovkombank/otdelenija/" target="_blank">
+                                                <a class="link" href="#" target="_blank">
                                                     <span class="map-company-info__val">60</span>
                                                     <span class="map-company-info__name">отделений </span>
                                                 </a>
                                             </div>
                                             <div class="map-company-info__col">
-                                                <a class="link" href="/bank/sovkombank/bankomaty/" target="_blank">
+                                                <a class="link" href="#" target="_blank">
                                                     <span class="map-company-info__val">41</span>
                                                     <span class="map-company-info__name">банкомат</span>
                                                 </a>
@@ -1419,6 +1416,45 @@ get_header();
 <script type="text/javascript"
         src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script>
+    function depositYield() {
+        var rate = <?php the_field('rate_number'); ?>;
+        // rate = parseInt(rate);
+        var price = jQuery('#price').val();
+        price = parseInt(price);
+        var price_2 = jQuery('#price-2').val();
+        var period= jQuery('#ik_select_link_text-month').text();
+
+        if(period == 'Месяц') {
+            period = 1/12;
+        } else if(period == '3 месяца') {
+            period = 0.25;
+        } else if(period == 'Полгода') {
+            period = 0.5;
+        } else if(period == '9 месяцев') {
+            period = 0.75;
+        } else if(period == '2 года') {
+            period = 2;
+        } else if(period == '3 года') {
+            period = 3;
+        }
+
+        var result = ((price / 100 * rate) * period) + price;
+        result = Math.round(result);
+        result = result.toString();
+        result = result.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+        jQuery('#result').html(result);
+        var proc = (price / 100 * rate) * period;
+        proc = Math.round(proc);
+        proc = proc.toString();
+        proc = proc.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+        jQuery('#nach-proc').html(proc);
+        /*console.log(rate);
+        console.log(price);
+        console.log(period);*/
+    }
+
+    depositYield();
+
     jQuery("#slider-range").slider({
         range: true,
         min: 1,
@@ -1427,7 +1463,11 @@ get_header();
         step: 1,
         slide: function (event, ui) {
             jQuery("#price").val(ui.values[1] * 1000);
-            // monthlyPayment();
+            depositYield();
+            var sum_vkld = ui.values[1] * 1000;
+            sum_vkld = sum_vkld.toString();
+            sum_vkld = sum_vkld.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+            jQuery('#summa-vklada').html(sum_vkld);
             // jQuery("#slider-range_dop").slider("option", "values", [1, ui.values[1] * 1000]);
             // document.getElementById('price_dop').value = ui.values[1] * 1000;
             // Get_PotrKr();
@@ -1443,7 +1483,7 @@ get_header();
         step: 1,
         slide: function (event, ui) {
             jQuery("#price-2").val(ui.values[1] * 1000);
-            // monthlyPayment();
+            depositYield();
             // jQuery("#slider-range_dop").slider("option", "values", [1, ui.values[1] * 1000]);
             // document.getElementById('price_dop').value = ui.values[1] * 1000;
             // Get_PotrKr();
@@ -1459,6 +1499,7 @@ get_header();
 
         jQuery('#ik_select_link_text-month').html(jQuery(this).html());
         jQuery('#ik_select_link_text-month-list').toggleClass('hidden');
+        depositYield();
     });
 
     jQuery('#ik_select_link_text-currency').click(function () {
