@@ -19,6 +19,17 @@ get_header();
     .bank-product-item__close {
         display: none;
     }
+
+    @media screen and (max-width: 767px) {
+        .product-inside__calculator .calculator__select-control.calculator__slider-control--select-currency {
+            visibility: hidden;
+            height: 0;
+        }
+
+        .product-inside__calculator .calculator__slider-control.calculator__slider-control--slider-sum {
+            width: 100%
+        }
+    }
 </style>
 <style>.calculator-branded-button {
         background-color: #d74739;
@@ -159,23 +170,23 @@ get_header();
                                                         <div class="product-inside__top" data-reactid=".1.0.1:0"><h1
                                                                     class="product-inside__top-name"
                                                                     data-reactid=".1.0.1:0.0"><?php the_title(); ?></h1>
-                                                            <div class="product-inside__top-company"
+                                                            <!--<div class="product-inside__top-company"
                                                                  data-reactid=".1.0.1:0.1">
-                                                            </div>
+                                                            </div>-->
                                                             <div class="radio-control radio-control--tabs radio-control--tabs product-inside__calculator-tabs"
                                                                  data-reactid=".1.0.1:0.4">
                                                                 <div class="radio-control-inner"
                                                                      data-reactid=".1.0.1:0.4.1">
                                                                     <ul data-reactid=".1.0.1:0.4.1.0">
-                                                                        <li data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=10">
+                                                                        <li data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=10" id="mob-rate">
                                                                             <label data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=10.$radio=1activeSection=10"><input
                                                                                         type="radio"
                                                                                         name="activeSection" checked=""
                                                                                         value="is-mobile-rates"
-                                                                                        data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=10.$radio=1activeSection=10.0"><span
+                                                                                        data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=10.$radio=1activeSection=10.0"><span id="mob-rate"
                                                                                         data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=10.$radio=1activeSection=10.1">Ставки</span></label>
                                                                         </li>
-                                                                        <li data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=11">
+                                                                        <li data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=11" id="mob-calc">
                                                                             <label data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=11.$radio=1activeSection=11"><input
                                                                                         type="radio"
                                                                                         name="activeSection"
@@ -183,7 +194,7 @@ get_header();
                                                                                         data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=11.$radio=1activeSection=11.0"><span
                                                                                         data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=11.$radio=1activeSection=11.1">Калькулятор</span></label>
                                                                         </li>
-                                                                        <li data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=12">
+                                                                        <li data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=12" id="mob-cond">
                                                                             <label data-reactid=".1.0.1:0.4.1.0.$li=1activeSection=12.$radio=1activeSection=12"><input
                                                                                         type="radio"
                                                                                         name="activeSection"
@@ -213,7 +224,7 @@ get_header();
                                                                         class="product-inside__top-pic"
                                                                         src="<?php the_field('main_bank_img'); ?>"
                                                                         data-reactid=".1.0.1:0.6.0"></a></div>
-                                                        <div class="product-inside__calculator is-mobile-rates"
+                                                        <div id="mob-choice-block" class="product-inside__calculator is-mobile-rates"
                                                              data-reactid=".1.0.1:1">
                                                             <div class="product-inside__calculator-col product-inside__calculator-col--controls animation fadeIn"
                                                                  data-reactid=".1.0.1:1.0">
@@ -393,11 +404,11 @@ get_header();
                                                                                 data-reactid=".1.0.1:1.0.4.1.0">Другой счёт</span>
                                                                     </div>
                                                                 </div>
-                                                                <div class="calculator-col--controls__bottom"
+                                                                <!--<div class="calculator-col--controls__bottom"
                                                                      data-reactid=".1.0.1:1.0.5"><a href="#"
                                                                                                     class="product-inside__calculate-deposit"
                                                                                                     data-reactid=".1.0.1:1.0.5.0">Расчитать
-                                                                        вклад</a></div>
+                                                                        вклад</a></div>-->
                                                             </div>
                                                             <div class="product-inside__calculator-col product-inside__calculator-col--thin animation fadeIn"
                                                                  data-reactid=".1.0.1:1.2">
@@ -1423,20 +1434,32 @@ get_header();
         price = parseInt(price);
         var price_2 = jQuery('#price-2').val();
         var period= jQuery('#ik_select_link_text-month').text();
+        var period_month;
+        var month_rep = 0;
 
         if(period == 'Месяц') {
             period = 1/12;
+            period_month = 1;
         } else if(period == '3 месяца') {
             period = 0.25;
+            period_month = 3;
         } else if(period == 'Полгода') {
             period = 0.5;
+            period_month = 6;
         } else if(period == '9 месяцев') {
             period = 0.75;
+            period_month = 9;
         } else if(period == '2 года') {
             period = 2;
+            period_month = 24;
         } else if(period == '3 года') {
             period = 3;
+            period_month = 36;
         }
+
+        month_rep = price_2 * period_month;
+
+        price = price + month_rep;
 
         var result = ((price / 100 * rate) * period) + price;
         result = Math.round(result);
@@ -1451,6 +1474,7 @@ get_header();
         /*console.log(rate);
         console.log(price);
         console.log(period);*/
+        console.log(month_rep);
     }
 
     depositYield();
@@ -1477,9 +1501,9 @@ get_header();
 
     jQuery("#slider-range-2").slider({
         range: true,
-        min: 1,
-        max: 1000,
-        values: [1, 500],
+        min: 0,
+        max: 100,
+        values: [0, 0],
         step: 1,
         slide: function (event, ui) {
             jQuery("#price-2").val(ui.values[1] * 1000);
@@ -1510,6 +1534,24 @@ get_header();
 
         // jQuery('#ik_select_link_text-currency').html(jQuery(this).html());
         jQuery('#ik_select_link_text-currency-list').toggleClass('hidden');
+    });
+
+    jQuery('#mob-rate').click(function () {
+        jQuery('#mob-choice-block').removeClass('is-mobile-conditions');
+        jQuery('#mob-choice-block').removeClass('is-mobile-calculator');
+        jQuery('#mob-choice-block').addClass('is-mobile-rates');
+    });
+
+    jQuery('#mob-calc').click(function () {
+        jQuery('#mob-choice-block').removeClass('is-mobile-conditions');
+        jQuery('#mob-choice-block').removeClass('is-mobile-rates');
+        jQuery('#mob-choice-block').addClass('is-mobile-calculator');
+    });
+
+    jQuery('#mob-cond').click(function () {
+        jQuery('#mob-choice-block').removeClass('is-mobile-calculator');
+        jQuery('#mob-choice-block').removeClass('is-mobile-rates');
+        jQuery('#mob-choice-block').addClass('is-mobile-conditions');
     });
 </script>
 <style>
