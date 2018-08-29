@@ -777,8 +777,7 @@ get_header();
                                                                     </div>
                                                                     <a href="/Goto.ashx?type=Saving&amp;id=37743"
                                                                        class="link mb-20 mt-40 d-ib" target="_blank"
-                                                                       data-reactid=".1.0.1:1.3.0.2">Подробнее на сайте
-                                                                        банка</a></div>
+                                                                       data-reactid=".1.0.1:1.3.0.2">Заполнить заявку</a></div>
                                                                 <a href=""
                                                                    class="ui-panel__more ui-panel__more--is-expanded"
                                                                    data-reactid=".1.0.1:1.3.1">Скрыть полные условия
@@ -1100,9 +1099,9 @@ get_header();
                                                                     </tbody>
                                                                 </table>
                                                             </div>
-                                                            <a href="<?php the_field('block_3_bank_link'); ?>"
+                                                            <!--noindex--><a rel="nofollow" href="<?php the_field('block_3_bank_link'); ?>"
                                                                class="link mb-20 mt-40 d-ib" target="_blank"
-                                                               data-reactid=".1.3.1.2">Подробнее на сайте банка</a>
+                                                               data-reactid=".1.3.1.2">Заполнить заявку</a><!--/noindex-->
                                                         </div>
                                                         <!--<a href="" class="ui-panel__more ui-panel__more--is-expanded"
                                                            data-reactid=".1.3.2">Скрыть полные условия вклада</a>-->
