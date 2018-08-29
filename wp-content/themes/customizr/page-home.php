@@ -464,7 +464,7 @@
                 <div class="_1zQdT BXky6">
                     <div class="_2BsQ1">
                         <div data-reactid="158">
-                            <div class="_2fyyM _1MiQb mjrcK _1Ow3t _3UTzX"><? wp_title(''); ?><!--</h1>--><span
+                            <div class="_2fyyM _1MiQb mjrcK _1Ow3t _3UTzX"><?php the_field('first_table_title');?><!--</h1>--><span
                                         class="_1jaU-"><span
                                             class="calculator-list-theme__header-region-name"></span></span></div>
                         </div>
@@ -700,7 +700,7 @@
                 <div class="_1zQdT BXky6">
                     <div class="_2BsQ1">
                         <div data-reactid="158">
-                            <div class="_2fyyM _1MiQb mjrcK _1Ow3t _3UTzX">Сравнение онлайн-кредитов<!--</h1>--><span
+                            <div class="_2fyyM _1MiQb mjrcK _1Ow3t _3UTzX"><?php the_field('second_table_title'); ?><!--</h1>--><span
                                         class="_1jaU-"><span
                                             class="calculator-list-theme__header-region-name"></span></span></div>
                         </div>
@@ -4149,7 +4149,7 @@
     function Get_OnKr() {
         $.ajax({
             // url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_potr_kr.php",
-            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/select-port-kr/",
+            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/select-online-kr/",
             type: "POST",
             // contentType: "application/json; charset=utf-8",
             // dataType: "json",

@@ -1112,7 +1112,7 @@ get_header();
                                             </div>
 
 
-                                            <div class="responsive-copy-container company-contacts-mobile">
+                                            <div class="responsive-copy-container company-contacts-mobile" style="display: none;">
                                                 <div class="company-contacts-mobile__row">
                                                     <div class="company-contacts-mobile__col BankContactsContainer">
                                                         <div class="sidebar-content-container serp-advices">
@@ -1244,7 +1244,7 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="l-sidebar l-sidebar--display-block">
+                            <div class="l-sidebar l-sidebar--display-block" style="display: none;">
 
                                 <div class="sidebar-content-container serp-advices">
                                     <div class="serp-advices-inner bank-offices-block">
